@@ -1,4 +1,4 @@
-type TemperatureUnit = 'C' | 'K' | 'F';
+export type TemperatureUnit = 'C' | 'K' | 'F';
 
 export interface WeatherReport {
   id: string;
