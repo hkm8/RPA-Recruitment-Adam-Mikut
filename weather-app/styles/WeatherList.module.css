@@ -1,0 +1,139 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.leftControls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.input,
+.select,
+.button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 25px; 
+  box-sizing: border-box;
+}
+
+.clearButton {
+  background-color: #f4a261; 
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clearButton:hover {
+  background-color: #e68900; 
+}
+
+.sortButton,
+.addButton {
+  background-color: #457b9d; 
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sortButton:hover,
+.addButton:hover {
+  background-color: #1d3557; 
+  transform: scale(1.05);
+}
+
+.addButton {
+  margin-left: auto; 
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  padding-top: 40px;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.table tr {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 8px;
+}
+
+.table tr:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.editButton,
+.deleteButton {
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 25px; 
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.editButton {
+  color: #fff;
+  background-color: #a8dadc; 
+}
+
+.editButton:hover {
+  background-color: #457b9d; 
+}
+
+.deleteButton {
+  color: #fff;
+  background-color: #f4a261; 
+}
+
+.deleteButton:hover {
+  background-color: #e68900; 
+}
+
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .leftControls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .input,
+  .select,
+  .button {
+    width: 100%;
+  }
+
+  .table th,
+  .table td {
+    padding: 5px;
+  }
+
+  .editButton,
+  .deleteButton {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
