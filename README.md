@@ -13,13 +13,13 @@ Make sure you have Node.js and npm installed on your machine.
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/hkm8/RPA-Recruitment-Adam-Mikut.git
     ```
 
 2. Navigate to the project directory:
 
     ```sh
-    cd your-repo
+    cd RPA-Recruitment-Adam-Mikut
     ```
 
 ### Running the Server
@@ -60,6 +60,15 @@ Make sure you have Node.js and npm installed on your machine.
 
     ```sh
     npm run dev
+    ```
+
+Backend
+    ```sh
+    http://localhost:8000/api/reports
+    ```
+Frontend
+    ```sh
+    http://localhost:3000/ 
     ```
 
 ### Additional Information
